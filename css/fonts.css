@@ -9,3 +9,14 @@ src: url('../fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
 url('../fonts/BebasNeueBold.woff') format('woff'),
 url('../fonts/BebasNeueBold.ttf') format('truetype');
 }
+
+@font-face {
+font-family: 'Bravo SCT';
+font-weight: normal;
+font-style: normal;
+
+src: url('../fonts/bravosct/BravoSCT.eot');
+src: url('../fonts/bravosct/BravoSCT.eot?#iefix') format('embedded-opentype'),
+url('../fonts/bravosct/BravoSCT.woff') format('woff'),
+url('../fonts/bravosct/BravoSCT.ttf') format('truetype');
+}

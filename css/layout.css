@@ -37,8 +37,6 @@ main {
   position: absolute;
   z-index: -1;
   top: 0;
-
-  width: 100%;
 }
 /* RED-ROUND-BG END */
 
@@ -52,54 +50,15 @@ header {
   align-items: center;
   justify-content: center;
 }
-.caesar {
-  margin: 20% 0 0 0;
-}
 
-.fly-letter {
-  position: absolute;
-  z-index: -1;
-}
-header > img:nth-child(2) {
-  z-index: -1;
-  top: 19%;
-  left: 13%;
+/* .medusa {
+  background-image: url(../img/red-round-bg.svg);
+  background-repeat: no-repeat;
+  background-position: 25% 25%;
+  background-size: contain;
+} */
 
-  width: 125px;
 
-  transform: rotate(-15deg);
-}
-header > img:nth-child(3) {
-  top: 51%;
-  left: 3%;
-
-  width: 100px;
-
-  transform: rotate(-24deg);
-}
-header > img:nth-child(4) {
-  z-index: 1;
-  top: 66%;
-  right: 35%;
-
-  transform: rotate(-5deg);
-}
-header > img:nth-child(5) {
-  z-index: 1;
-  top: 51%;
-  right: -1%;
-
-  transform: rotate(23deg);
-}
-header > img:nth-child(6) {
-  z-index: 1;
-  top: 13%;
-  right: 14%;
-
-  width: 111px;
-
-  transform: rotate(20deg);
-}
 /* HEADER END */
 
 /* DESCRIPTION START */
@@ -119,8 +78,9 @@ header > img:nth-child(6) {
   letter-spacing: 0.1em;
 
   font-family: 'Bebas Neue Bold', sans-serif;
-  font-size: 72px;
+  font-size: 100px;
 }
+
 .description h3 {
   margin-top: 1rem;
 
@@ -138,7 +98,7 @@ header > img:nth-child(6) {
 .buttons a {
   display: inline-block;
 
-  padding: 1em 1.5em;
+  padding: 2em 4em;
 
   transition: all .2s ease-in-out;
   text-transform: uppercase;
@@ -146,7 +106,7 @@ header > img:nth-child(6) {
   color: #fff;
   border: 1px #a81212 solid;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;;
 }
 .buttons a:hover,
 .buttons a:last-child:link {
@@ -164,7 +124,7 @@ header > img:nth-child(6) {
 .letters {
   display: grid;
 
-  margin-top: 25vh;
+  margin-top: 50vh;
 
   font-family: 'Bebas Neue Bold', sans-serif;
 
@@ -217,7 +177,7 @@ header > img:nth-child(6) {
 /* MEDIA LETTERS START */
 
 @media all and (max-width: 768px) {
-  .caesar {
+  .medusa {
     width: 80%;
   }
   .letters {
@@ -225,7 +185,7 @@ header > img:nth-child(6) {
   }
 }
 @media all and (max-width: 320px) {
-  .caesar {
+  .medusa {
     width: 80%;
   }
   .description h1 {
