@@ -1,4 +1,4 @@
-@import "fonts.css";
+
 * {
   box-sizing: border-box;
 
@@ -25,19 +25,9 @@ a {
   }
 
 main {
-  display: grid;
+  overflow: hidden;
 
   padding-bottom: 25vh;
-
-  justify-self: center;
-  justify-items: center;
-  justify-content: center;
-  grid: repeat(100%, 1fr) / 1fr 50% 1fr;
-  grid-gap: 1.5em 3em;
-  grid-template-areas:
-  ". header . "
-  ". description ."
-  "main-content main-content main-content";
 
 }
 /* GRID END */
@@ -56,15 +46,11 @@ main {
 header {
   position: relative;
 
-  display: grid;
+  display: flex;
 
-  justify-self: center;
-  grid-template-columns: 1fr auto 1fr;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-}
-header img {
-  grid-column: 2 / 3;
 }
 .caesar {
   margin: 20% 0 0 0;
@@ -121,6 +107,8 @@ header > img:nth-child(6) {
   display: flex;
 
   margin-top: 3em;
+
+  text-align: center;
 
   align-items: center;
   align-content: space-around;
@@ -222,6 +210,33 @@ header > img:nth-child(6) {
 }
 .letter6 {
   background-image: url(../img/figures/6.png);
-    background-size: 80%;
 }
 /* LETTERS END */
+
+
+/* MEDIA LETTERS START */
+
+@media all and (max-width: 768px) {
+  .caesar {
+    width: 80%;
+  }
+  .letters {
+    grid:repeat(3, 1fr) / repeat(2, 1fr);
+  }
+}
+@media all and (max-width: 320px) {
+  .caesar {
+    width: 80%;
+  }
+  .description h1 {
+    font-size: 58px;
+  }
+  .buttons a:last-child {
+    margin: 1em 0 0 0;
+  }
+  .letters {
+    grid:repeat(6, 1fr) / repeat(1, 1fr);
+
+  }
+}
+/* MEDIA LETTERS END */
