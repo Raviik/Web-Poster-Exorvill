@@ -1,4 +1,7 @@
 
+html {
+    font-size: 10px;
+}
 * {
   box-sizing: border-box;
 
@@ -53,22 +56,20 @@ header {
   align-items: center;
   justify-content: center;
 }
+.scroll-effect-items {
+  margin-bottom: 10rem;
 
-/* .medusa {
-  background-image: url(../img/red-round-bg.svg);
-  background-repeat: no-repeat;
-  background-position: 25% 25%;
-  background-size: contain;
-} */
-
-
+}
+.adaptive {
+  display: none;
+}
 /* HEADER END */
 
 /* DESCRIPTION START */
 .description {
   display: flex;
 
-  margin-top: 3em;
+  margin-top: 3rem;
 
   text-align: center;
 
@@ -79,7 +80,6 @@ header {
 }
 .description h1 {
   text-align: left;
-  letter-spacing: 0.1em;
   text-transform: uppercase;
 
   font-family: 'Bebas Neue Bold', sans-serif;
@@ -108,7 +108,7 @@ header {
 .buttons a {
   display: inline-block;
 
-  padding: 2em 4em;
+  padding: 2rem 4rem;
 
   transition: all .2s ease-in-out;
   text-transform: uppercase;
@@ -123,7 +123,7 @@ header {
   background-color: #a81212;
 }
 .buttons a:last-child {
-  margin-left: 1em;
+  margin-left: 1rem;
 
   background-color: #a81212;
 
@@ -141,7 +141,7 @@ header {
   justify-self: stretch;
   justify-items: center;
   grid:repeat(2, 1fr) / repeat(3, 1fr);
-  grid-gap: 4em;
+  grid-gap: 4rem;
   ;
 }
 .head-base {
@@ -157,10 +157,10 @@ header {
   flex-flow: column nowrap;
 }
 .letters h1 {
-  font-size: 16em;
+  font-size: 16rem;
 }
 .letters h2 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 .letter1 {
   background-image: url(../img/figures/1.png);
@@ -192,6 +192,14 @@ header {
 /* MEDIA LETTERS START */
 
 @media all and (max-width: 768px) {
+  .scroll-effect-items {
+    display: none;
+  }
+  .adaptive {
+    display: block;
+
+    width: 80%;
+  }
   .medusa {
     width: 80%;
   }
@@ -200,15 +208,35 @@ header {
   }
 }
 @media all and (max-width: 320px) {
+  .scroll-effect-items {
+    display: none;
+  }
+  .adaptive {
+    display: block;
+
+    width: 80%;
+  }
   .medusa {
     width: 80%;
   }
   .description h1 {
+    text-align: center;
+
     font-size: 58px;
   }
+  .description h1 span:first-of-type,
+   .description h1 span:last-of-type {
+    letter-spacing: normal;
+    }
   .buttons a:last-child {
     margin: 1em 0 0 0;
   }
+  .description h3 {
+    margin: 1rem 0;
+
+    font-size: 32px;
+  }
+
   .letters {
     grid:repeat(6, 1fr) / repeat(1, 1fr);
 

@@ -10,12 +10,14 @@
 <body>
   <main>
     <header>
-      <img src="img/medusa.png" alt="this is medusa gorgona" class="medusa">
-      <img src="img/red-round-bg.svg" alt="red round" class="round-bg">
-      <div id="scene">
-        <img data-depth="1" src="img/cross-1.svg" alt="cross">
-        <img data-depth="2" src="img/cross-2.svg" alt="cross">
-        <img data-depth="3" src="img/cross-3.svg" alt="cross">
+      <img data-depth="0.1" src="img/medusa.png" alt="this is medusa gorgona" class="medusa adaptive">
+      <img data-depth="0.4"src="img/red-round-bg.svg" alt="big-cross" class="round-bg adaptive">
+      <div class="scroll-effect-items">
+        <div id="scene">
+          <img data-depth="0.1" src="img/medusa.png" alt="this is medusa gorgona" class="medusa">
+          <img data-depth="0.4"src="img/red-round-bg.svg" alt="big-cross" class="round-bg">
+          <img data-depth="1.5"src="img/cross.png" alt="cross">
+        </div>
       </div>
     </header>
     <section class="description">
