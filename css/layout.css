@@ -11,6 +11,8 @@ html {
 body {
   color: #fff;
   background-color: #000;
+
+  font-family: 'Roboto', sans-serif;
 }
 a {
   text-decoration: none;
@@ -79,17 +81,19 @@ header {
   flex-flow: column nowrap;
 }
 .description h1 {
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
 
   font-family: 'Bebas Neue Bold', sans-serif;
-  font-size: 195px;
+  font-size: 27.4rem;
 }
 .description h1 span:first-of-type {
-  letter-spacing: 50px;
+  letter-spacing: 16px;
+
+  font-size: 30.8rem;
 }
 .description h1 span:last-of-type {
-  letter-spacing: 43px;
+  letter-spacing: 2.3rem;
 }
 .description h3 {
   margin: 6rem 0 3rem 0;
@@ -108,7 +112,7 @@ header {
 .buttons a {
   display: inline-block;
 
-  padding: 2rem 4rem;
+  padding: 3rem 6rem;
 
   transition: all .2s ease-in-out;
   text-transform: uppercase;
@@ -116,7 +120,8 @@ header {
   color: #fff;
   border: 1px #a81212 solid;
 
-  font-family: 'Roboto', sans-serif;;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.7rem;;
 }
 .buttons a:hover,
 .buttons a:last-child:link {
@@ -138,11 +143,9 @@ header {
 
   font-family: 'Bebas Neue Bold', sans-serif;
 
-  justify-self: stretch;
-  justify-items: center;
-  grid:repeat(2, 1fr) / repeat(3, 1fr);
-  grid-gap: 4rem;
-  ;
+  justify-content: center;
+  grid:repeat(2, minmax(150px, 300px)) / repeat(3, minmax(300px, 600px));
+  grid-gap: 5rem;
 }
 .head-base {
   display: flex;
@@ -157,10 +160,10 @@ header {
   flex-flow: column nowrap;
 }
 .letters h1 {
-  font-size: 16rem;
+  font-size: 26rem;
 }
 .letters h2 {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 .letter1 {
   background-image: url(../img/figures/1.png);
@@ -188,6 +191,30 @@ header {
 }
 /* LETTERS END */
 
+/* PARAGRAPHS START */
+
+.manson {
+  display: grid;
+
+  margin: 50vh 5% 0 5%;
+
+  justify-content: center;
+  grid:repeat(2, 1fr) / repeat(3, minmax(300px, 600px));
+  grid-gap: 5rem;
+}
+.paragraph p {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.paragraph h4 {
+  margin-bottom: 1.5rem;
+
+  color: #a81212;
+
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.4rem;
+}
+/* PARAGRAPHS END */
 
 /* MEDIA LETTERS START */
 
@@ -203,7 +230,7 @@ header {
   .medusa {
     width: 80%;
   }
-  .letters {
+  .letters, .manson {
     grid:repeat(3, 1fr) / repeat(2, 1fr);
   }
 }
@@ -237,7 +264,7 @@ header {
     font-size: 32px;
   }
 
-  .letters {
+  .letters, .manson {
     grid:repeat(6, 1fr) / repeat(1, 1fr);
 
   }
