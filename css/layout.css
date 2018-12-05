@@ -219,7 +219,7 @@ header {
 
 /* MEDIA LETTERS START */
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1200px) {
   .scroll-effect-items {
     display: none;
   }
