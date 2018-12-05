@@ -12,10 +12,15 @@
     <header>
       <img src="img/medusa.png" alt="this is medusa gorgona" class="medusa">
       <img src="img/red-round-bg.svg" alt="red round" class="round-bg">
+      <div id="scene">
+        <img data-depth="1" src="img/cross-1.svg" alt="cross">
+        <img data-depth="2" src="img/cross-2.svg" alt="cross">
+        <img data-depth="3" src="img/cross-3.svg" alt="cross">
+      </div>
     </header>
     <section class="description">
-      <h1>Определи своего демона</h1>
-      <h3>Выкинь хлам из головы и расслабься</h2>
+      <h1>Мы Боримся<br><span>С вашими</span><br><span>Демонами</span></h1>
+      <h3>Выкинь хлам из головы<br>и расслабься</h2>
       <div class="buttons">
         <a href="#">Узнать о себе</a>
         <a href="#">Купить билет</a>
@@ -24,29 +29,35 @@
     <section class="letters">
       <div class="letter1 head-base">
         <h1 class="heading-lg">А</h1>
-        <h2>Агрессия</h2>
+        <h2><a href="#">Агрессия</a></h2>
       </div>
       <div class="letter2 head-base">
         <h1 class="heading-lg">З</h1>
-        <h2>Злость</h2>
+        <h2><a href="#">Злость</a></h2>
       </div>
       <div class="letter3 head-base">
         <h1 class="heading-lg">Н</h1>
-        <h2>Ненависть</h2>
+        <h2><a href="#">Ненависть</a></h2>
       </div>
       <div class="letter4 head-base">
         <h1 class="heading-lg">Л</h1>
-        <h2>Лень</h2>
+        <h2><a href="#">Лень</a></h2>
       </div>
       <div class="letter5 head-base">
         <h1 class="heading-lg">Д</h1>
-        <h2>Двуличие</h2>
+        <h2><a href="#">Двуличие</a></h2>
       </div>
       <div class="letter6 head-base">
         <h1 class="heading-lg">С</h1>
-        <h2>Страх</h2>
+        <h2><a href="#">Страх</a></h2>
       </div>
     </section>
   </main>
+  <script src="js/parallax.js"></script>
+  <script type="text/javascript">
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
+  </script>
+
 </body>
 </html>

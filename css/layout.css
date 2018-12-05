@@ -11,6 +11,9 @@ body {
 }
 a {
   text-decoration: none;
+
+  color: inherit;
+
 }
 
 /* GRID START */
@@ -75,19 +78,26 @@ header {
   flex-flow: column nowrap;
 }
 .description h1 {
+  text-align: left;
   letter-spacing: 0.1em;
+  text-transform: uppercase;
 
   font-family: 'Bebas Neue Bold', sans-serif;
-  font-size: 100px;
+  font-size: 195px;
 }
-
+.description h1 span:first-of-type {
+  letter-spacing: 50px;
+}
+.description h1 span:last-of-type {
+  letter-spacing: 43px;
+}
 .description h3 {
-  margin-top: 1rem;
+  margin: 6rem 0 3rem 0;
 
   letter-spacing: 1px;
 
   font-family: 'Roboto Slab', serif;
-  font-size: 28px;
+  font-size: 60px;
   font-weight: 300;
 }
 
@@ -170,6 +180,11 @@ header {
 }
 .letter6 {
   background-image: url(../img/figures/6.png);
+}
+
+.letters h2:hover {
+  transition: all ease-in-out .8s;
+  text-decoration: line-through;
 }
 /* LETTERS END */
 
