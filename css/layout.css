@@ -222,6 +222,13 @@ header {
   .scroll-effect-items {
     display: none;
   }
+  .description h1,
+  .description h1 span:first-of-type,
+   .description h1 span:last-of-type {
+    letter-spacing: normal;
+
+    font-size: 15rem;
+  }
   .adaptive {
     display: block;
 
@@ -237,6 +244,9 @@ header {
 @media all and (max-width: 320px) {
   .scroll-effect-items {
     display: none;
+  }
+  .description h1 {
+    font-size: 10rem;
   }
   .adaptive {
     display: block;
@@ -254,6 +264,8 @@ header {
   .description h1 span:first-of-type,
    .description h1 span:last-of-type {
     letter-spacing: normal;
+
+    font-size: 7rem;
     }
   .buttons a:last-child {
     margin: 1em 0 0 0;
@@ -263,10 +275,11 @@ header {
 
     font-size: 32px;
   }
-
+  .manson {
+    grid-gap: 2rem;
+  }
   .letters, .manson {
     grid:repeat(6, 1fr) / repeat(1, 1fr);
-
   }
 }
 /* MEDIA LETTERS END */
