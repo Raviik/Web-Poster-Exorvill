@@ -1,22 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300,400,700&subset=cyrillic');
-@font-face {
-font-family: 'Bebas Neue Bold';
-font-weight: normal;
-font-style: normal;
 
-src: url('../fonts/BebasNeueBold.eot');
-src: url('../fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
-url('../fonts/BebasNeueBold.woff') format('woff'),
-url('../fonts/BebasNeueBold.ttf') format('truetype');
+@font-face
+{
+  font-family: 'Bebas Neue Bold';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('../fonts/BebasNeueBold.eot');
+  src: url('../fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/BebasNeueBold.woff') format('woff'),
+  url('../fonts/BebasNeueBold.ttf') format('truetype');
 }
 
 @font-face {
-font-family: 'Bravo SCT';
-font-weight: normal;
-font-style: normal;
+  font-family: 'Bravo SCT';
+  font-weight: normal;
+  font-style: normal;
 
-src: url('../fonts/bravosct/BravoSCT.eot');
-src: url('../fonts/bravosct/BravoSCT.eot?#iefix') format('embedded-opentype'),
-url('../fonts/bravosct/BravoSCT.woff') format('woff'),
-url('../fonts/bravosct/BravoSCT.ttf') format('truetype');
+  src: url('../fonts/bravosct/BravoSCT.eot');
+  src: url('../fonts/bravosct/BravoSCT.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/bravosct/BravoSCT.woff') format('woff'),
+  url('../fonts/bravosct/BravoSCT.ttf') format('truetype');
 }
