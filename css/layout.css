@@ -248,7 +248,6 @@ footer h1 {
   position: absolute;
 
   text-shadow: 5px 0px 35px black;
-
 }
 .power {
   display: flex;
@@ -271,7 +270,6 @@ footer h1 {
 .rockin-hand {
   width: 15%;
 }
-
 .right-arrow-bg {
   position: absolute;
   z-index: -1;
