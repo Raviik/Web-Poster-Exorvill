@@ -287,7 +287,7 @@ footer h1 {
 /* FOOTER END */
 /* MEDIA START */
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1300px) {
   .scroll-effect-items {
     display: none;
   }
@@ -317,36 +317,7 @@ footer h1 {
     grid:repeat(3, 1fr) / repeat(2, 1fr);
   }
 }
-@media all and (max-width: 768px) {
-  .manson {
-    flex-flow: column nowrap;
-  }
-  .paragraph {
-    width: 100%;
-  }
-  footer h1 {
-    z-index: 1;
-  }
-  .rockin-hand {
-    width: 30%;
-  }
-  .flash1 {
-    right: 34%;
-  }
-  .flash2 {
-    right: 9%;
-  }
-  .flash3 {
-    display: none;
-  }
-  .right-arrow-bg {
-    z-index: 0;
-    bottom: 0%;
-
-    height: 50%;
-  }
-}
-@media all and (max-width: 320px) {
+@media all and (min-width: 320px) and (max-width: 768px) {
   .scroll-effect-items {
     display: none;
   }
@@ -415,6 +386,36 @@ footer h1 {
     width: 40%;
   }
 }
+@media all and (max-width: 768px) {
+  .manson {
+    flex-flow: column nowrap;
+  }
+  .paragraph {
+    width: 100%;
+  }
+  footer h1 {
+    z-index: 1;
+  }
+  .rockin-hand {
+    width: 30%;
+  }
+  .flash1 {
+    right: 34%;
+  }
+  .flash2 {
+    right: 9%;
+  }
+  .flash3 {
+    display: none;
+  }
+  .right-arrow-bg {
+    z-index: 0;
+    bottom: 0%;
+
+    height: 50%;
+  }
+}
+
 /* MEDIA END */
 
 
