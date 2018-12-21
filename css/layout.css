@@ -1,4 +1,3 @@
-
 html {
     font-size: 10px;
 }
@@ -14,7 +13,7 @@ body {
   color: #fff;
   background-color: #000;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Clear Sans Regular', sans-serif;
 }
 
 a {
@@ -23,35 +22,27 @@ a {
   color: inherit;
 }
 
-/* GRID START */
-  header {
-    grid-area: header;
-  }
-  .description {
-    grid-area: description;
-  }
-  .letters {
-    grid-area: main-content;
-  }
 main {
   overflow: hidden;
+
+  padding: 0 2rem;
 }
+
 h1 {
   font-family: 'Bebas Neue Bold', sans-serif;
   font-size: 30rem;
 }
-/* GRID END */
 
 /* RED-ROUND-BG START */
-.round-bg {
+.daddy-cross-bg {
   position: absolute;
   z-index: -1;
   top: 0;
 }
 /* RED-ROUND-BG END */
 
-/* HEADER START */
-header {
+/* PARALLAX START */
+.parallax-statue {
   position: relative;
 
   display: flex;
@@ -66,10 +57,14 @@ header {
 .adaptive {
   display: none;
 }
-/* HEADER END */
 
-/* DESCRIPTION START */
-.description {
+.arrow-down img {
+  width: 64%;
+}
+/* PARALLAX END */
+
+/* HEADER START */
+header, .description {
   display: flex;
 
   margin-top: 3rem;
@@ -81,53 +76,34 @@ header {
   justify-content: center;
   flex-flow: column nowrap;
 }
-.description h1 {
+header h1 {
+  z-index: 2;
+
   text-align: center;
 
   font-size: 30rem;
   line-height: 30rem;
 }
-.description h1 span:first-of-type {
+header h1 span:first-of-type {
   letter-spacing: 16px;
 
   font-size: 34rem;
 }
-.description h1 span:last-of-type {
+header h1 span:last-of-type {
   letter-spacing: 2.3rem;
 }
+/* HEADER END */
+
+
+/* DESCRIPTION START */
 .description h3 {
-  margin: 6rem 0 3rem 0;
+  margin: 20vh 0 5rem 0;
 
   letter-spacing: 1px;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Clear Sans Light', sans-serif;
   font-size: 60px;
   font-weight: 300;
-}
-
-.buttons {
-  margin-top: 2.5rem;
-}
-.buttons a {
-  display: inline-block;
-
-  padding: 3rem 6rem;
-
-  transition: all .2s ease-in-out;
-  text-transform: uppercase;
-
-  color: #fff;
-  border: 1px #a81212 solid;
-
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.7rem;;
-}
-.buttons a:hover,
-.buttons a:first-child:link {
-  background-color: #a81212;
-}
-.buttons a:last-child {
-  margin-left: 1rem;
 }
 /* DESCRIPTION END */
 
@@ -147,13 +123,13 @@ header {
 .letters {
   display: grid;
 
-  margin-top: 50vh;
+  margin-top: 40vh;
 
   font-family: 'Bebas Neue Bold', sans-serif;
 
   justify-content: center;
   grid:repeat(2, minmax(150px, 300px)) / repeat(3, minmax(300px, 600px));
-  grid-gap: 5rem;
+  grid-row-gap: 20rem;
 }
 .head-base {
   display: flex;
@@ -173,29 +149,24 @@ header {
 .letters h2 {
   font-size: 4rem;
 }
-.letter1 {
+.agressive {
   background-image: url(../img/figures/1.png);
 }
-.letter2 {
+.evil {
   background-image: url(../img/figures/2.png);
 }
-.letter3 {
+.hatred {
   background-image: url(../img/figures/3.png);
 }
-.letter4 {
+.laziness {
   background-image: url(../img/figures/4.png);
 }
-.letter5 {
+.duplicity {
   background-image: url(../img/figures/5.png);
 }
-.letter6 {
+.fear {
   background-image: url(../img/figures/6.png);
 }
-
-/* .letters h2:hover {
-  transition: all ease-in-out .8s;
-  text-decoration: line-through;
-} */
 /* LETTERS END */
 
 /* PARAGRAPHS START */
@@ -203,42 +174,51 @@ header {
 .manson {
   display: flex;
 
-  margin: 50vh 5%;
+  margin: 40vh auto 40vh auto;
 
-  flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
+  flex-flow: column nowrap;
 }
 .paragraph {
-  position: relative;
+  display: flex;
 
-  width: 30%;
-  margin: 0 0 3% 0;
+  max-width: 1200px;
+  margin: 0 0 10% 0;
+
+  align-items: center;
 }
 .paragraph p {
-  text-align: 1.2rem;
+  color: transparent;
+  color: #fff;
 
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 300;
-  line-height: 2rem;
+  font-family: 'Clear Sans Thin', sans-serif;
+  font-size: 3rem;
+  line-height: 1.2;
 }
 .paragraph h4 {
-  margin-bottom: 1.5rem;
+  margin: 0 0 3% 0;
 
-  color: #a81212;
+  color: transparent;
+  background-image: url(../img/text-bg.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: cover;
 
   font-family: 'Bebas Neue Bold', sans-serif;
-  font-size: 3.6rem;
+  font-size: 12rem;
 }
 /* PARAGRAPHS END */
 
 /* FOOTER START */
 
 footer {
-position: relative;
+  position: relative;
   bottom: 0;
 
   display: flex;
+
+  margin-top: 40vh;
 
   flex-flow: column nowrap;
   justify-content: flex-end;
@@ -252,24 +232,16 @@ footer h1 {
 .power {
   display: flex;
 
+  justify-content: center;
   align-items: center;
 }
-.power-item {
+.power img {
   position: absolute;
   bottom: 60%;
+
+  width: 50vw;
 }
-.flash1 {
-  right: 44%;
-}
-.flash2 {
-  right: 30%
-}
-.flash3 {
-  right: 22%;
-}
-.rockin-hand {
-  width: 15%;
-}
+
 .right-arrow-bg {
   position: absolute;
   z-index: -1;
@@ -278,29 +250,29 @@ footer h1 {
   width: 100%;
   height: 200px;
 
-  background-image: url(../img/figures/3-bg.png);
+  background-image: url(../img/figures/arrow-one-bg.png);
   background-repeat: repeat-x;
   background-size: contain;
 }
 /* FOOTER END */
-/* MEDIA START */
 
+/* MEDIA START */
 @media all and (max-width: 1300px) {
   .scroll-effect-items {
     display: none;
   }
-  .description h1,
-  .description h1 span:first-of-type,
-  .description h1 span:last-of-type {
+  header h1,
+  header h1 span:first-of-type,
+  header h1 span:last-of-type {
     letter-spacing: normal;
 
     font-size: 15rem;
     line-height: 15rem;
   }
-  .description h1 span:first-of-type {
+  header h1 span:first-of-type {
       font-size: 18.5rem;
   }
-  .description h1 span:last-of-type {
+  header h1 span:last-of-type {
     letter-spacing: 12px;
   }
   .adaptive {
@@ -330,56 +302,38 @@ footer h1 {
   .medusa {
     width: 80%;
   }
-  .description h1 {
+  header h1 {
     text-align: center;
 
     font-size: 6.4rem;
     line-height: normal;
   }
-  .description h1 span:first-of-type {
+  header h1 span:first-of-type {
     letter-spacing: 2px;}
-  .description h1 span:last-of-type {
+  header h1 span:last-of-type {
     letter-spacing: -1px;
   }
-  .description h1 span:first-of-type,
-   .description h1 span:last-of-type {
+  header h1 span:first-of-type,
+  header h1 span:last-of-type {
     font-size: 7.6rem;
     line-height: normal;
     }
-  .buttons a:last-child {
-    margin: 1em 0 0 0;
-
-    transition: all .3s ease-in-out;
-
-    border: none;
-  }
-  .buttons a:hover {
-    background: none;
-  }
   .description h3 {
     margin: 4rem 0;
 
     font-size: 34px;
   }
-  .manson {
-    grid-gap: 2rem;
-    flex-flow: column nowrap;
-  }
   .paragraph {
     width: 100%;
     margin: 0 0 12% 0;
   }
-  .letters, .manson {
+  .letters {
     grid:repeat(6, 1fr) / repeat(1, 1fr);
   }
   footer h1 {
-    position: static;
-
     font-size: 10rem;
   }
-  .power {
-    display: none;
-  }
+
   .rockin-hand {
     width: 40%;
   }
@@ -397,31 +351,37 @@ footer h1 {
   .rockin-hand {
     width: 30%;
   }
-  .flash1 {
-    right: 34%;
+  .letters {
+    grid-row-gap: 10rem;
   }
-  .flash2 {
-    right: 9%;
-  }
-  .flash3 {
-    display: none;
-  }
-  .right-arrow-bg {
-    z-index: 0;
-    bottom: 0%;
+  .tab-right-content {
+    flex-flow: column nowrap;
 
-    height: 50%;
   }
+  .tab-buttons {
+    margin: 0 0 8% 0;
+  }
+  .tab-buttons button {
+    margin-right: 5%;
+
+    font-size: 2rem;
+
+  }
+  .tab-panel h4 {
+    font-size: 16vw;
+  }
+  .tab-panel p {
+    font-size: 1.8rem;
+  }
+
 }
 
 /* MEDIA END */
 
-
-
-
-
-
 /* ANIMATION START */
+#scene img:last-of-type{
+    left: -70% !important;
+}
 .sweep-down {
   position: relative;
 
@@ -460,7 +420,7 @@ footer h1 {
   transform: perspective(1px) translateZ(0);
 }
 .float:hover {
-  transform: translateY(-20px);
+  transform: translateY(16px);
 }
 .link-line {
   position: relative;
@@ -482,8 +442,6 @@ footer h1 {
 
   background: #a81212;
 }
-
-
 .link-line:after {
   right: 1.5px;
 
@@ -507,6 +465,5 @@ footer h1 {
 
   background: transparent;
 }
-
 
 /* ANIMATION END */

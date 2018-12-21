@@ -1,0 +1,33 @@
+.tab-right-content {
+  display: flex;
+}
+.tab-buttons {
+  margin: 0 10% 0 0;
+}
+.tab-buttons button {
+  margin: 0 0 2vh 0;
+  padding: 0;
+
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+
+  color: #7E7E7E;
+  border: none;
+  outline: none;
+  background: none;
+
+  font-family: 'Clear Sans Thin', sans-serif;
+  font-size: 3rem;
+}
+.tab-buttons button:hover {
+  color: #fff;
+}
+.tab-panel {
+  display: flex;
+}
+.tab-panel p {
+  transition: ease 1s;
+}
+.tab-panel h4 {
+  animation-iteration-count: 1;
+}
